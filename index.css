@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  vertical-align: sub !important;
+}
+
+body {
+  font-family: "shabnam";
+  background-color: #222;
+  color: #d1d1d1;
+}
+
+@font-face {
+  font-family: "shabnam";
+  src: url("./fonts/Shabnam-FD.ttf");
+}
+header {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #444;
+  padding: 30px;
+  text-align: center;
+}
+header h1 {
+  font-size: 18px;
+}
+header h1 i {
+  color: #008000;
+  font-size: 18px;
+}
+
+main {
+  width: 100%;
+  min-height: 90vh;
+  display: block;
+}
+main .container-md {
+  min-width: 200px;
+  padding: 30px 20px;
+}
+@media (min-width: 767px) {
+  main .container-md {
+    width: 600px;
+  }
+}
+@media (max-width: 766.99px) {
+  main .container-md {
+    width: 100%;
+  }
+}
+main input {
+  background-color: #222 !important;
+  color: #fbfbfb !important;
+  border: 1px solid #5c5c5c !important;
+}
+main #input_add_list::-moz-placeholder {
+  font-size: 14px;
+}
+main #input_add_list, main #input_add_list::placeholder, main label {
+  font-size: 14px;
+}
+main #btn-addToDo {
+  font-size: 13px;
+}
+main .list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 30px;
+  padding-right: 0;
+}
+main .list .list-Data {
+  border: 1px dotted #eee;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+main .list .list-Data:hover {
+  background-color: #adadad;
+  color: #3b3b3b;
+}
+main .list .list-Data i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: red;
+  transition: all 0.4s;
+}
+main .list .list-Data i:hover {
+  color: #fff;
+  background-color: #6b5050;
+}
+main #btn-RemoveAll {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+main .editMode {
+  border: 1px solid #f00;
+}/*# sourceMappingURL=index.css.map */

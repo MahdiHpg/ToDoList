@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="css/bootstrap/dist/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="index.css">
+        <title>پروژه ToDoList</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                پروژه ToDoList
+                <i class="bi bi-check-all"></i>
+            </h1>
+        </header>
+        <main>
+            <div class="container-md">
+                <form id="addForm">
+                    <div class="form-floating">
+                        <input id="input_add_list" type="text" class="form-control" placeholder="یادآوری...">
+                        <label for="input_add_list">یادآوری ...</label>
+                        <p id="alertTextInput" class="text-danger mt-3 d-none"><small>یک نام انتخاب کن ...</small></p>
+                    </div>
+                    <button id="btn-addToDo" class="btn btn-success mt-4">
+                        اضافه کردن
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                </form>
+                <div id="searchPart" class="form-floating mt-4">
+                    <input id="input_search" type="search" class="form-control" placeholder="جستجوی ...">
+                    <label for="input_search">جستجوی ...</label>
+                </div>
+                <hr>
+                <div id="" class="mt-5">
+                    <h6 class="mb-3">لیست ها</h6>
+                    <p id="noneDataTitle" class="text-danger text-center w-100"></p>
+                    <ul id="ul_lists" class="list">
+                        <!-- <li class="list-items">
+                            doljkwjwlk
+                            <i class="bi bi-x"></i>
+                        </li> -->
+                    </ul>
+                    <button id="btn-RemoveAll" class="btn btn-outline-danger mt-5">پاک کردن همه</button>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+
+        <script src="css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
